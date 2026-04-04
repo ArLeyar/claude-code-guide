@@ -47,19 +47,31 @@ cp warp-themes/monokai_pro.yaml ~/.warp/themes/
 
 Then: Settings → Appearance → Theme → Monokai Pro.
 
+**Name your tabs** by project (e.g. Werma, HoneyJourney, AR) — instantly see where you are.
+
+**Disable built-in AI:** Settings → AI → turn off, so it doesn't interfere with Claude Code.
+
 **Hotkeys:**
 
 | Action | Shortcut |
 |--------|----------|
 | New tab | `Cmd+T` |
-| Switch tabs | `Cmd+Shift+[` / `Cmd+Shift+]` |
+| Switch tabs | `Ctrl+Tab` / `Ctrl+Shift+Tab` |
+| Close tab | `Cmd+W` |
 | New window | `Cmd+N` |
 | Split vertically | `Cmd+D` |
 | Split horizontally | `Cmd+Shift+D` |
+| Command history | `↑` / `↓` |
+
+**Tip:** `Cmd+T`, `Cmd+W`, `Ctrl+Tab` work the same in browsers — learn once, use everywhere.
 
 ## Step 4. Terminal basics
 
+The terminal is just your file system in text form. Same folders as Finder, nothing complicated.
+
 ```bash
+pwd                    # where am I? (starts in home directory ~)
+ls                     # what's in this folder?
 cd ~/projects          # go to your projects folder
 mkdir my-project       # create a new project
 cd my-project          # enter it
@@ -85,8 +97,10 @@ Dictate prompts, commands, code. Works in any app including the terminal.
 | `/model` | Switch model (Opus, Sonnet, Haiku) |
 | `/plugins` | Install plugins (Slack, Linear, Gmail, etc.) |
 | `/loop` | Run a command on repeat with interval |
-| `Escape` or `/exit` | Exit |
+| `Escape` | Rewind — undo last action |
+| `Escape Escape` | Rewind further |
 | `Shift+Tab` | Toggle Plan Mode |
+| `/exit` | Exit |
 
 Tip: restart Claude Code occasionally to pick up version updates.
 
@@ -131,15 +145,14 @@ Claude Code works not only in the terminal:
 | Environment | Link |
 |-------------|------|
 | Warp (terminal) | [warp.dev](https://app.warp.dev/referral/8J544N) |
-| Cursor (IDE) | [cursor.com](https://www.cursor.com/) |
-| Zed (editor) | [zed.dev](https://zed.dev/) |
+| [Cursor](https://www.cursor.com/) (IDE) | Built-in terminal |
+| [Zed](https://zed.dev/) (editor) | Built-in terminal |
 
-## Bonus: free alternatives
+## Bonus
 
-| Tool | Notes |
-|------|-------|
-| [Qwen Code](https://github.com/QwenLM/qwen-code) | Free, integrates with Zed |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Free, Google's terminal AI agent |
+- **`Alt+Space`** — invoke ChatGPT (separate from terminal), handy for quick questions
+- **[Qwen Code](https://github.com/QwenLM/qwen-code)** — free, integrates with Zed
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — free, Google's terminal AI agent
 
 ## All links
 

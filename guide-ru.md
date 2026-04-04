@@ -47,19 +47,31 @@ cp warp-themes/monokai_pro.yaml ~/.warp/themes/
 
 Потом: Settings → Appearance → Theme → Monokai Pro.
 
+**Именовать вкладки** по проектам (Werma, HoneyJourney, AR и т.д.) — сразу видно где что.
+
+**Отключить встроенный AI:** Settings → AI → выключить, чтобы не мешался Claude Code.
+
 **Горячие клавиши:**
 
 | Действие | Сочетание |
 |----------|-----------|
 | Новая вкладка | `Cmd+T` |
-| Переключение вкладок | `Cmd+Shift+[` / `Cmd+Shift+]` |
+| Переключение вкладок | `Ctrl+Tab` / `Ctrl+Shift+Tab` |
+| Закрыть вкладку | `Cmd+W` |
 | Новое окно | `Cmd+N` |
 | Разделить вертикально | `Cmd+D` |
 | Разделить горизонтально | `Cmd+Shift+D` |
+| История команд | `↑` / `↓` |
+
+**Лайфхак:** `Cmd+T`, `Cmd+W`, `Ctrl+Tab` работают так же в браузере — учишь один раз, используешь везде.
 
 ## Шаг 4. Базовые команды терминала
 
+Терминал — это те же папки, что в Finder, только через текст. Ничего сложного.
+
 ```bash
+pwd                    # где я? (начинаем с домашней директории ~)
+ls                     # что в этой папке?
 cd ~/projects          # перейти в папку проектов
 mkdir my-project       # создать проект
 cd my-project          # войти в него
@@ -85,8 +97,10 @@ claude                 # запустить Claude Code
 | `/model` | Выбор модели (Opus, Sonnet, Haiku) |
 | `/plugins` | Установка плагинов (Slack, Linear, Gmail и др.) |
 | `/loop` | Запуск команды на повторе с интервалом |
-| `Escape` или `/exit` | Выход |
+| `Escape` | Отмотать назад (rewind) — отменить последнее действие |
+| `Escape Escape` | Отмотать ещё дальше |
 | `Shift+Tab` | Переключить Plan Mode |
+| `/exit` | Выход |
 
 Совет: иногда перезапускай Claude Code, чтобы подтянулась новая версия.
 
@@ -131,15 +145,14 @@ Claude Code работает не только в терминале:
 | Среда | Ссылка |
 |-------|--------|
 | Warp (терминал) | [warp.dev](https://app.warp.dev/referral/8J544N) |
-| Cursor (IDE) | [cursor.com](https://www.cursor.com/) |
-| Zed (редактор) | [zed.dev](https://zed.dev/) |
+| [Cursor](https://www.cursor.com/) (IDE) | Встроенный терминал |
+| [Zed](https://zed.dev/) (редактор) | Встроенный терминал |
 
-## Бонус: бесплатные альтернативы
+## Бонус
 
-| Инструмент | Заметки |
-|-----------|---------|
-| [Qwen Code](https://github.com/QwenLM/qwen-code) | Бесплатный, интегрируется с Zed |
-| [Gemini CLI](https://github.com/google-gemini/gemini-cli) | Бесплатный, AI-агент Google в терминале |
+- **`Alt+Space`** — вызов ChatGPT (отдельно от терминала), удобно для быстрых вопросов
+- **[Qwen Code](https://github.com/QwenLM/qwen-code)** — бесплатный, интегрируется с Zed
+- **[Gemini CLI](https://github.com/google-gemini/gemini-cli)** — бесплатный, AI-агент Google в терминале
 
 ## Все ссылки
 
